@@ -20,7 +20,6 @@ import javax.swing.border.Border;
  * icons seems to be someone called 
  * <a href="https://commons.wikimedia.org/wiki/User:Cryosta">Kazukiokumura</a>.
  *
- * @author Guy-Vincent Jourdan, University of Ottawa
  */
 
 public class DotButton extends JButton {
