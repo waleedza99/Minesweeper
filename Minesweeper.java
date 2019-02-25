@@ -6,7 +6,7 @@
  */
 public class Minesweeper {
 
-     // ADD YOUR INSTANCE VARIABLES HERE
+    
     public static final int DEFAULT_WIDTH = 20;
     public static final int DEFAULT_HEIGTH = 12;
     public static final int DEFAULT_MINES = 36;
