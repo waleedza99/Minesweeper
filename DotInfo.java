@@ -8,8 +8,6 @@
 
 public class DotInfo {
 
-     // ADD YOUR INSTANCE VARIABLES HERE
-
     private boolean covered;
     private boolean mined;
     private int neighbooringMines; 
@@ -28,7 +26,6 @@ public class DotInfo {
      */
     public DotInfo(int x, int y){
 
-    // ADD YOU CODE HERE
         this.x=x;
         this.y=y;
         neighbooringMines = 0;
@@ -48,7 +45,6 @@ public class DotInfo {
      */
     public int getX(){
 
-    // ADD YOU CODE HERE
         return this.x; 
 
     }
@@ -60,7 +56,6 @@ public class DotInfo {
      */
     public int getY(){
 
-    // ADD YOU CODE HERE
         return this.y; 
 
     }
@@ -71,7 +66,6 @@ public class DotInfo {
      */
     public void setMined() {
 
-    // ADD YOU CODE HERE
         mined=true;
 
 
@@ -85,7 +79,6 @@ public class DotInfo {
      */
     public boolean isMined() {
 
-    // ADD YOU CODE HERE
         return mined; 
 
     }
@@ -96,7 +89,6 @@ public class DotInfo {
      */
     public void uncover() {
 
-    // ADD YOU CODE HERE
         covered=false;
 
     }
@@ -108,7 +100,6 @@ public class DotInfo {
      */
     public boolean isCovered(){
 
-    // ADD YOU CODE HERE
         return covered;
 
     }
@@ -120,7 +111,6 @@ public class DotInfo {
      */
     public void click() {
 
-    // ADD YOU CODE HERE
         wasClicked=true;
 
     }
@@ -133,7 +123,6 @@ public class DotInfo {
      */
     public boolean hasBeenClicked() {
 
-    // ADD YOU CODE HERE
         return wasClicked;
 
     }
@@ -147,7 +136,6 @@ public class DotInfo {
      */
     public void setNeighbooringMines(int neighbooringMines) {
 
-    // ADD YOU CODE HERE
         this.neighbooringMines = neighbooringMines;
 
     }
@@ -159,7 +147,6 @@ public class DotInfo {
      */
     public int getNeighbooringMines() {
 
-    // ADD YOU CODE HERE
         return this.neighbooringMines;
 
     }
