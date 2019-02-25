@@ -15,7 +15,6 @@ import javax.swing.*;
 
 public class GameController implements ActionListener {
 
-    // ADD YOUR INSTANCE VARIABLES HERE
 
     private GameView gameView;
     private GameModel gameModel;
@@ -33,7 +32,6 @@ public class GameController implements ActionListener {
      */
     public GameController(int width, int height, int numberOfMines) {
 
-    // ADD YOU CODE HERE
 
         gameModel = new GameModel(width, height, numberOfMines);
         gameView = new GameView(gameModel,this);
@@ -50,7 +48,6 @@ public class GameController implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         
-    // ADD YOU CODE HERE
 
     	if (e.getActionCommand().equals("Reset")) {
 			this.reset();
@@ -86,7 +83,6 @@ public class GameController implements ActionListener {
      */
     private void reset(){
 
-    // ADD YOU CODE HERE
 
         gameModel.reset();
         gameView.update();
@@ -108,7 +104,6 @@ public class GameController implements ActionListener {
      */
     private void play(int width, int heigth){
 
-    // ADD YOU CODE HERE
 
         Object[] choices = {"Quit", "Play Again"};
 
@@ -153,7 +148,7 @@ public class GameController implements ActionListener {
 
                         }
                     }
-                        // Add the code for clear zone here
+                        // code for clear zone here
                         else if (gameModel.isBlank(width,heigth)){
 
                         clearZone(gameModel.get(width,heigth));
@@ -172,9 +167,6 @@ public class GameController implements ActionListener {
      * had zero neighbouring mines
      */
     private void clearZone(DotInfo initialDot) {
-
-
-    // ADD YOU CODE HERE
 
     GenericArrayStack <DotInfo> Stack;
 
