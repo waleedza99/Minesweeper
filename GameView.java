@@ -13,7 +13,6 @@ import javax.swing.*;
 
 public class GameView extends JFrame {
 
-     // ADD YOUR INSTANCE VARIABLES HERE
     private DotButton[][] board;
     private GameModel gameModel;
     private javax.swing.JLabel nbreOfStepsLabel=null;
@@ -29,7 +28,6 @@ public class GameView extends JFrame {
 
     public GameView(GameModel gameModel, GameController gameController) {
         
-    // ADD YOU CODE HERE
         this.gameModel = gameModel;
 
         setTitle("Minesweeper");
