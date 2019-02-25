@@ -17,8 +17,6 @@ import java.util.Random;
 public class GameModel {
 
 
-     // ADD YOUR INSTANCE VARIABLES HERE
-
     private int numberOfSteps;
     private int neighbooringMines;
     private int numberOfMines;
@@ -46,7 +44,6 @@ public class GameModel {
      */
     public GameModel(int width, int heigth, int numberOfMines) {
         
-    // ADD YOU CODE HERE
         this.widthOfGame = width;
         this.heigthOfGame = heigth;
         this.numberOfMines = numberOfMines;
@@ -62,8 +59,6 @@ public class GameModel {
      */
     public void reset(){
 
-        
-    // ADD YOU CODE HERE
         numberOfSteps=0;
         numberUncovered=0;
         model = new DotInfo[heigthOfGame][widthOfGame];
@@ -119,7 +114,6 @@ public class GameModel {
      */   
     public int getHeigth(){
         
-    // ADD YOU CODE HERE
         return heigthOfGame;
 
     }
@@ -131,7 +125,6 @@ public class GameModel {
      */   
     public int getWidth(){
         
-    // ADD YOU CODE HERE
         return widthOfGame;
 
     }
@@ -149,7 +142,6 @@ public class GameModel {
      */   
     public boolean isMined(int i, int j){
         
-    // ADD YOU CODE HERE
         return model[j][i].isMined();
 
     }
@@ -166,7 +158,6 @@ public class GameModel {
      */   
     public boolean hasBeenClicked(int i, int j){
         
-    // ADD YOU CODE HERE
         return model[j][i].hasBeenClicked();
 
 
@@ -184,7 +175,6 @@ public class GameModel {
      */   
     public boolean isBlank(int i, int j){
         
-    // ADD YOU CODE HERE
         return model[j][i].getNeighbooringMines()==0;
 
     }
@@ -199,7 +189,6 @@ public class GameModel {
      */   
     public boolean isCovered(int i, int j){
         
-    // ADD YOU CODE HERE
 
         return model[j][i].isCovered();
 
@@ -217,7 +206,6 @@ public class GameModel {
      */   
     public int getNeighbooringMines(int i, int j){
         
-    // ADD YOU CODE HERE
         return model[j][i].getNeighbooringMines();
 
 
@@ -234,7 +222,6 @@ public class GameModel {
      */   
     public void uncover(int i, int j){
         
-    // ADD YOU CODE HERE
         model[j][i].uncover();
 
 
@@ -250,7 +237,6 @@ public class GameModel {
      */   
     public void click(int i, int j){
         
-    // ADD YOU CODE HERE
         model[j][i].click();
 
     }
@@ -259,7 +245,6 @@ public class GameModel {
      */   
     public void uncoverAll(){
         
-    // ADD YOU CODE HERE
         for (int i=0; i<widthOfGame; i++){
             for(int j=0; j<heigthOfGame; j++){
                 if (model[j][i].isCovered()) {
@@ -282,7 +267,6 @@ public class GameModel {
      */   
     public int getNumberOfSteps(){
         
-    // ADD YOU CODE HERE
         return numberOfSteps;
 
     }
@@ -302,7 +286,6 @@ public class GameModel {
      */   
     public DotInfo get(int i, int j) {
         
-    // ADD YOU CODE HERE
         return model[j][i];
 
     }
@@ -314,7 +297,6 @@ public class GameModel {
      */
      public void step(){
         
-    // ADD YOU CODE HERE
             numberOfSteps++;
     }
  
@@ -326,7 +308,6 @@ public class GameModel {
      */
     public boolean isFinished(){
         
-    // ADD YOU CODE HERE
         for(int i=0; i<widthOfGame; i++){
             for(int j=0; j<heigthOfGame; j++){
                 if (!(model[j][i].isMined()) && model[j][i].isCovered()){
@@ -346,7 +327,6 @@ public class GameModel {
      */
     public String toString(){
         
-    // ADD YOU CODE HERE
         String s="";
             for(int i=0; i<heigthOfGame; i++){
                 for (int j=0; j<widthOfGame; j++){
