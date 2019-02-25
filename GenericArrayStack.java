@@ -1,7 +1,5 @@
 public class GenericArrayStack<E> implements Stack<E> {
    
-   // ADD YOUR INSTANCE VARIABLES HERE
-    //MODIFIED
     private E[] elems; 
     private int top;
     @SuppressWarnings( "unchecked" )
@@ -16,8 +14,7 @@ public class GenericArrayStack<E> implements Stack<E> {
 
     // Returns true if this ArrayStack is empty
     public boolean isEmpty() {
-        
-    // ADD YOU CODE HERE
+         
         return top == 0;
 
 
@@ -25,14 +22,12 @@ public class GenericArrayStack<E> implements Stack<E> {
 
     public void push( E elem ) {
         
-    // ADD YOU CODE HERE
         elems[ top ] = elem;
         top++;
 
     }
     public E pop() {
         
-    // ADD YOU CODE HERE
         E saved;
 
         top--;
@@ -44,8 +39,7 @@ public class GenericArrayStack<E> implements Stack<E> {
     }
 
     public E peek() {
-        
-    // ADD YOU CODE HERE
+       
         return elems[top-1];
 
     }
