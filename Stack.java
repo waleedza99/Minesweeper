@@ -4,7 +4,6 @@
  * that has been added onto the Stack, is the first one to
  * be removed.
  *
- * @author Marcel Turcotte
  */
 
 public interface Stack<E> {
